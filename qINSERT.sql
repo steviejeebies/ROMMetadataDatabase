@@ -1,0 +1,256 @@
+INSERT INTO Region VALUES ('j'); -- Japan
+INSERT INTO Region VALUES ('e'); -- Europe
+INSERT INTO Region VALUES ('u'); -- North America
+INSERT INTO Region VALUES ('a'); -- Australia
+INSERT INTO Region VALUES ('s'); -- South America
+
+INSERT INTO Languages VALUES ('en');
+INSERT INTO Languages VALUES ('jp');
+INSERT INTO Languages VALUES ('fr');
+INSERT INTO Languages VALUES ('de');
+INSERT INTO Languages VALUES ('es');
+
+INSERT INTO Publisher VALUES (null, 'Sega', 'Japan', '1960-06-03');
+INSERT INTO Publisher VALUES (null, 'Nintendo', 'Japan', '1889-09-23');
+INSERT INTO Publisher VALUES (null, 'Capcom', 'Japan', '1979-05-30');
+INSERT INTO Publisher VALUES (null, 'Konami', 'Japan', '1969-03-21');
+INSERT INTO Publisher VALUES (null, 'Sony', 'Japan', '1946-05-07');
+INSERT INTO Publisher VALUES (null, 'EA', 'United States', '1982-05-27');
+INSERT INTO Publisher VALUES (null, 'LucasArts', 'United States', '1982-05-01');
+INSERT INTO Publisher VALUES (null, 'Eidos Interactive', 'United Kingdom', '1995-09-25');
+INSERT INTO Publisher VALUES (null, 'Square', 'Japan', '1986-09-01');
+INSERT INTO Publisher VALUES (null, 'Taito', 'Japan', '1982-08-21');
+
+INSERT INTO Developer SET developer_name = 'Eurocom', publisher_id = 6;
+INSERT INTO Developer SET developer_name = 'Factor 5', publisher_id = 7;
+INSERT INTO Developer SET developer_name = 'Crystal Dynamics', publisher_id = 8;
+INSERT INTO Developer SET developer_name = 'Light Weight', publisher_id = 9;
+INSERT INTO Developer SET developer_name = 'Taito', publisher_id = 10;
+INSERT INTO Developer SET developer_name = 'Sega', publisher_id = 1;
+INSERT INTO Developer SET developer_name = 'Nintendo', publisher_id = 2;
+INSERT INTO Developer SET developer_name = 'Capcom', publisher_id = 3;
+INSERT INTO Developer SET developer_name = 'Konami', publisher_id = 4;
+INSERT INTO Developer SET developer_name = 'Insomniac Games', publisher_id = 5;
+
+INSERT INTO Console SET console_name = 'Nintendo 64', publisher_id = 2;
+INSERT INTO Console SET console_name = 'Mega Drive', publisher_id = 1;
+INSERT INTO Console SET console_name = 'Playstation', publisher_id = 5;
+INSERT INTO Console SET console_name = 'Nintendo Entertainment System', publisher_id = 2;
+INSERT INTO Console SET console_name = ' Dreamcast', publisher_id = 1;
+
+INSERT INTO Console_File_Type VALUES (4, 'nes');
+INSERT INTO Console_File_Type VALUES (2, 'bin');
+INSERT INTO Console_File_Type VALUES (2, 'md');
+INSERT INTO Console_File_Type VALUES (1, 'n64');
+INSERT INTO Console_File_Type VALUES (1, 'z64');
+INSERT INTO Console_File_Type VALUES (3, 'pbp');
+INSERT INTO Console_File_Type VALUES (3, 'cue');
+INSERT INTO Console_File_Type VALUES (5, 'gdi');
+INSERT INTO Console_File_Type VALUES (5, 'cdi');
+    
+INSERT INTO Game VALUES (null, 4, 7, 3, 2);
+INSERT INTO Game VALUES (null, 4, 7, 3, 2);
+INSERT INTO Game VALUES (null, 4, 9, 3, 1);
+INSERT INTO Game VALUES (null, 4, 7, 3, 1);
+INSERT INTO Game VALUES (null, 2, 6, 3, 1);
+INSERT INTO Game VALUES (null, 2, 6, 3, 1);
+INSERT INTO Game VALUES (null, 2, 9, 7, 1);
+INSERT INTO Game VALUES (null, 1, 1, 12, 4);
+INSERT INTO Game VALUES (null, 1, 2, 7, 2);
+INSERT INTO Game VALUES (null, 1, 3, 7, 1);
+INSERT INTO Game VALUES (null, 3, 4, 16, 2);
+INSERT INTO Game VALUES (null, 3, 5, 3, 2);
+INSERT INTO Game VALUES (null, 3, 10, 3, 1);
+INSERT INTO Game VALUES (null, 3, 9, 12, 1);
+INSERT INTO Game VALUES (null, 5, 3, 3, 2);
+INSERT INTO Game VALUES (null, 5, 6, 3, 2);
+
+INSERT INTO Game_Title SET game_title = "Super Mario Brothers";
+INSERT INTO Game_Title SET game_title = "Super Mario Bros. 2";
+INSERT INTO Game_Title SET game_title = "Super Mario USA";		-- Mario 2 Jpn
+INSERT INTO Game_Title SET game_title = "Teenage Mutant Ninja Turtles";
+INSERT INTO Game_Title SET game_title = "Teenage Mutant Hero Turtles";
+INSERT INTO Game_Title SET game_title = "Gekikame Ninja Den";		-- TMNT JPN
+INSERT INTO Game_Title SET game_title = "The Legend of Zelda";
+INSERT INTO Game_Title SET game_title = "Zelda no Densetsu 1: The Hyrule Fantasy"; -- Zelda JPN
+INSERT INTO Game_Title SET game_title = "Sonic 3D Blast";
+INSERT INTO Game_Title SET game_title = "Sonic 3D Flickies' Island";
+INSERT INTO Game_Title SET game_title = "Castle of Illusion Starring Mickey Mouse";
+INSERT INTO Game_Title SET game_title = "Castle of Illusion Estrelando Mickey Mouse"; -- South America
+INSERT INTO Game_Title SET game_title = "Castlevania: Bloodlines";
+INSERT INTO Game_Title SET game_title = "Castlevania: The New Generation";
+INSERT INTO Game_Title SET game_title = "Akumajou Dracula: Vampire Killer";	-- Castlevania JPN
+INSERT INTO Game_Title SET game_title = "007: The World Is Not Enough";
+INSERT INTO Game_Title SET game_title = "007: Die Welt ist nicht genug";
+INSERT INTO Game_Title SET game_title = "007: El Mundo Nunca Es Suficiente"; 
+INSERT INTO Game_Title SET game_title = "007: Le monde ne suffit pas";
+INSERT INTO Game_Title SET game_title = "Star Wars: Rogue Squadron";
+INSERT INTO Game_Title SET game_title = "Star Wars: Shutsugeki! Rogue Chuutai";
+INSERT INTO Game_Title SET game_title = "Gex 3: Deep Cover Gecko";
+INSERT INTO Game_Title SET game_title = "Bushido Blade";
+INSERT INTO Game_Title SET game_title = "Bust-A-Move 2: Arcade Edition";
+INSERT INTO Game_Title SET game_title = "Puzzle Bobble 2";
+INSERT INTO Game_Title SET game_title = "Spyro the Dragon";
+INSERT INTO Game_Title SET game_title = "Metal Gear Solid";
+INSERT INTO Game_Title SET game_title = "102 Dalmatians: Puppies to the Rescue";
+INSERT INTO Game_Title SET game_title = "102 Dalmatiner";							-- DE
+INSERT INTO Game_Title SET game_title = "102 Dálmatas: Cachorros al rescate";		-- ES
+INSERT INTO Game_Title SET game_title = "Les 102 Dalmatiens à la rescousse!";		-- FR
+INSERT INTO Game_Title SET game_title = "Space Channel 5 Part 2";
+
+UPDATE Game_Title SET game_title = "Super Mario Bros." WHERE title_id = 1;
+Select * FROM GAME_TITLE WHERE title_id = 1;
+
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/u_en_SuperMarioBros.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/e_en_SuperMarioBros.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/e_fr_SuperMarioBros.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/j_jp_SuperMarioBros.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/s_es_SuperMarioBros.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/a_en_SuperMarioBros.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/u_en_SuperMarioBros2.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/e_en_SuperMarioBros2.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/j_jp_SuperMarioUSA.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/u_en_TeenageMutantNinjaTurtles.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/e_en_TeenageMutantHeroTurtles.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/j_jp_GekikameNinjaDen.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/u_en_TheLegendofZelda.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/e_en_TheLegendofZelda.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/nes/j_jp_ZeldanoDensetsu1TheHyruleFantasy.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/u_en_Sonic3DBlast.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/a_en_Sonic3DFlickiesIsland.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/u_en_CastleofIllusionStarringMickeyMouse.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/s_es_CastleofIllusionEstrelandoMickeyMouse.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/u_en_CastlevaniaBloodlines.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/e_en_CastlevaniaTheNewGeneration.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/md/j_jp_AkumajouDraculaVampireKiller.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/u_en_007TheWorldIsNotEnough.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/e_en_007TheWorldIsNotEnough.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/e_de_007DieWeltistnichtgenug.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/e_es_007ElMundoNuncaEsSuficiente.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/e_fr_007Lemondenesuffitpas.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/u_en_StarWarsRogueSquadron.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/j_jp_StarWarsShutsugeki!RogueChuutai.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/n64/u_en_Gex3DeepCoverGecko.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/ps1/u_en_BushidoBlade.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/ps1/j_jp_BushidoBlade.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/ps1/u_en_BustAMove2ArcadeEdition.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/ps1/j_jp_PuzzleBobble2.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/ps1/u_en_SpyrotheDragon.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/ps1/u_en_MetalGearSolid.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/u_en_102DalmatiansPuppiestotheRescue.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/e_en_102DalmatiansPuppiestotheRescue.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/e_de_102Dalmatiner.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/e_es_102DalmatasCachorrosalrescate.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/e_fr_Les102Dalmatiensalarescousse.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/s_es_102DalmatasCachorrosalrescate.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/a_en_102DalmatiansPuppiestotheRescue.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/u_en_SpaceChannel5Part2.png';
+INSERT INTO Game_BoxArt SET boxart ='/img/dc/e_en_SpaceChannel5Part2.png';
+
+INSERT INTO Game_Regional VALUES ( 1,'u','en',1,1,"1985-11-17");
+INSERT INTO Game_Regional VALUES ( 1,'e','en',1,2,"1987-05-15");
+INSERT INTO Game_Regional VALUES ( 1,'e','fr',1,3,"1987-05-15");
+INSERT INTO Game_Regional VALUES ( 1,'j','jp',1,4,"1985-09-13");
+INSERT INTO Game_Regional VALUES ( 1,'s','es',1,5,"1985-09-13");
+INSERT INTO Game_Regional VALUES ( 1,'a','en',1,6,"1985-09-13");
+INSERT INTO Game_Regional VALUES ( 2,'u','en',2,7,"1988-10-28");
+INSERT INTO Game_Regional VALUES ( 2,'e','en',2,8,"1989-04-28");
+INSERT INTO Game_Regional VALUES ( 2,'j','jp',3,9,"1992-09-14");
+INSERT INTO Game_Regional VALUES ( 3,'u','en',4,10,"1989-06-02");
+INSERT INTO Game_Regional VALUES ( 3,'e','en',5,11,"1990-08-17");
+INSERT INTO Game_Regional VALUES ( 3,'j','jp',6,12,"1990-12-07");
+INSERT INTO Game_Regional VALUES ( 4,'u','en',7,13,"1987-07-01");
+INSERT INTO Game_Regional VALUES ( 4,'e','en',7,14,"1987-11-27");
+INSERT INTO Game_Regional VALUES ( 4,'j','jp',8,15,"1994-02-19");
+INSERT INTO Game_Regional VALUES ( 5,'u','en',9,16,"1996-11-09");
+INSERT INTO Game_Regional VALUES ( 5,'a','en',10,17,"1996-11-09");
+INSERT INTO Game_Regional VALUES ( 6,'u','en',11,18,"1990-11-22");
+INSERT INTO Game_Regional VALUES ( 6,'s','es',12,19,"1990-11-22");
+INSERT INTO Game_Regional VALUES ( 7,'u','en',13,20,"1994-03-17");
+INSERT INTO Game_Regional VALUES ( 7,'e','en',14,21,"1994-03-20");
+INSERT INTO Game_Regional VALUES ( 7,'j','jp',15,22,"1994-03-18");
+INSERT INTO Game_Regional VALUES ( 8,'u','en',16,23,"2000-11-01");
+INSERT INTO Game_Regional VALUES ( 8,'e','en',16,24,"2000-12-08");
+INSERT INTO Game_Regional VALUES ( 8,'e','de',17,25,"2000-12-08");
+INSERT INTO Game_Regional VALUES ( 8,'e','es',18,26,"2000-12-08");
+INSERT INTO Game_Regional VALUES ( 8,'e','fr',19,27,"2000-12-08");
+INSERT INTO Game_Regional VALUES ( 9,'u','en',20,28,"1998-12-07");
+INSERT INTO Game_Regional VALUES ( 9,'j','jp',21,29,"1999-01-10");
+INSERT INTO Game_Regional VALUES ( 10,'u','en',22,30,"1999-09-28");
+INSERT INTO Game_Regional VALUES ( 11,'u','en',23,31,"1997-10-01");
+INSERT INTO Game_Regional VALUES ( 11,'j','jp',23,32,"1997-03-14");
+INSERT INTO Game_Regional VALUES ( 12,'u','en',24,33,"1996-03-29");
+INSERT INTO Game_Regional VALUES ( 12,'j','jp',25,34,"1996-08-15");
+INSERT INTO Game_Regional VALUES ( 13,'u','en',26,35,"1998-09-10");
+INSERT INTO Game_Regional VALUES ( 14,'u','en',27,36,"1998-10-21");
+INSERT INTO Game_Regional VALUES ( 15,'u','en',28,37,"2000-11-15");
+INSERT INTO Game_Regional VALUES ( 15,'e','en',28,38,"2000-12-20");
+INSERT INTO Game_Regional VALUES ( 15,'e','de',29,39,"2000-12-20");
+INSERT INTO Game_Regional VALUES ( 15,'e','es',30,40,"2000-12-20");
+INSERT INTO Game_Regional VALUES ( 15,'e','fr',31,41,"2000-12-20");
+INSERT INTO Game_Regional VALUES ( 15,'s','es',30,42,"2000-12-20");
+INSERT INTO Game_Regional VALUES ( 15,'a','en',28,43,"2000-11-15");
+INSERT INTO Game_Regional VALUES ( 16,'u','en',32,44,"2002-02-14");
+INSERT INTO Game_Regional VALUES ( 16,'e','en',32,45,"2002-02-14");
+
+call insert_new_rom (1,'673913A23CD612DAF5AD32D4085E0760','AB30029EFEC6CCFC5D65DFDA7FBC6E6489A80805','u','en','nes');
+call insert_new_rom (1,'B330314E19126D87D156D0618C4657B0','8EE8032491DEE422534B82F107DE0E9F5F9D44F9','e','en','nes');
+call insert_new_rom (1,'285C55DE27E4C26726E91CE66DAC306E','7379C488ED505CEE334DE3BBA3060BC0898E3C9C','e','fr','nes');
+call insert_new_rom (1,'0E2BE2324567ECBC373D9EF562DAC8B9','FD9CC124F80D9502EFB865C52D464B3466B33B61','j','jp','nes');
+call insert_new_rom (1,'53EC87A473AB2C9F65310E8E172B2CD5','A8E57F5136230F47E075007DA7B9C1F6CB8186D2','s','es','nes');
+call insert_new_rom (1,'9EC6C77E884E40C8696B87BE189FEAF9','AE6E850AA148F1094D28EBA1E2E83C5115E84787','a','en','nes');
+call insert_new_rom (2,'8F685ABE6116CFF24B0236E5B5EBCD66','F9C2A5F518158B3C1B29305D58DB25A0AEC92192','u','en','nes');
+call insert_new_rom (2,'67575456FA49B5307D93324C84976B43','E8589BB1C0FE5C0759FB25763017D0AD690B19F7','u','en','nes');
+call insert_new_rom (2,'BF70AE0BA113D39D86BE9399CD7F1A05','4C68B7C8D3C513D1923B017463DD7345A7DA17E9','u','en','nes');
+call insert_new_rom (2,'622F807C05D33784E193CD330A798B34','0406BB97BD0C19549ED1544986540446FCC31324','u','en','nes');
+call insert_new_rom (2,'40ED4387E258334AB0BD2ECF98256256','97690288173593C8C0AF0A8BD4D7076B7590B177','u','en','nes');
+call insert_new_rom (2,'A4D0674D6FCDCD6707A7F5D5DCF720FA','99DE0FF28BAD16C41FA17954F514C5222855DAFC','u','en','nes');
+call insert_new_rom (2,'731E80700A5C1360F24AEE0364D9FF46','B3A5854A3E8860EF83813FBE55DF55CA1080840B','e','en','nes');
+call insert_new_rom (2,'414778AE39537540050CF25C69AFBED7','C9791A0BFEB997C86293C4B15C8636AA337D57C8','j','jp','nes');
+call insert_new_rom (3,'7881BE3E6D1AC587818D4D027042F03B','7D4DCBBAF8706E2B96A0FE0DC2744516988E1B56','u','en','nes');
+call insert_new_rom (3,'DC641FFAA32023B47A78705F46BCD5C2','628475323E914E24DA2929E56A21FDCDD2F7FC84','e','en','nes');
+call insert_new_rom (3,'1DD834ACF2EEF3391324ED2892C9274B','3170F879A1F724978806C49560C71EA1F9FCD285','j','jp','nes');
+call insert_new_rom (4,'3279ACEED4663F9584689C0036776B8B','1808510211FEB461C83EB1E6F25ED6BC0E0EA86A','u','en','nes');
+call insert_new_rom (4,'A7AE5C16F27E069913E5E04936861097','6880FC8C369153C7BCB7A76B77063A8891CB5CCE','u','en','nes');
+call insert_new_rom (4,'A42668A57828B11CAFA20989370F54DE','182C27073165B0491411D5C33D04FB328F75491B','u','en','nes');
+call insert_new_rom (4,'C34235C6116B335AAB27B7861D94086C','F2C63DF68FE425F21DD65778190B581DC44E41BC','u','en','nes');
+call insert_new_rom (4,'936EC0D6B50C74FD94B3E6D3ACE08071','A9540BE8571E9CA7ACCEF718B86058958CE5EF71','e','en','nes');
+call insert_new_rom (4,'590F77DA5B990AA96D8493CF78F105EF','3C3109D348358FB7A63C952BEA7B78AC1DD506E5','j','jp','bin');
+call insert_new_rom (5,'D6AF6C94DD31836827899432C67956CE','22ADC6736B2BB8B7B1E7E121B446100908C8BB5F','u','en','md');
+call insert_new_rom (5,'76980DF91B120C296B7C250E0B5FC5E0','96C4061F2BD5FACDB44F5F618B2C1479EBD7E5D8','a','en','bin');
+call insert_new_rom (6,'D4346CAEF6C4432395115DDDD4237E25','0C0D936FDB438F037DD540C5C17676CE480705A2','u','en','bin');
+call insert_new_rom (6,'DB3A452FF931A9295671D9A0C2C1D6C2','C6E1758BFFF72EE3FEA3BBC2D6F6F8987AE132DC','s','es','md');
+call insert_new_rom (7,'B63601FDE8E99A6C81859BB760833BB5','EAA3DCD883BE699D78A7ECB1E9B62CB8B847C958','u','en','md');
+call insert_new_rom (7,'883925398543056AB92C3B190A04E6BF','EC94AF7C18BC44DDD30266949D56CEE296EA8D0F','e','en','md');
+call insert_new_rom (7,'E4842BC5E8D34809C22B626CE57ABCBB','493CD76A9236372DE17992587AEB66C860CFF5A2','j','jp','bin');
+call insert_new_rom (8,'5A65C967EF9F0EEF844C46C2FB6F6FA6','4E2970CD29833799299DF88F309E9487D7621818','u','en','n64');
+call insert_new_rom (8,'F213371656509B271BBD2DC0C4D77F34','F7A3D15ECF9C9492A4451F0A872A4307370CDC83','e','en','n64');
+call insert_new_rom (8,'BE5E868983388DFC2379160A33962AAF','034E50294FE88D7417883B75CF37BDE794398AA3','e','de','z64');
+call insert_new_rom (8,'0DB0E82831555607EE9830612106DBAB','2088858B9D6DA361A722A4BC37F1AE5C52FE0341','e','es','z64');
+call insert_new_rom (8,'2A3253240B5A42A875A6BFB1483BA92D','0FA6544A63C80574ECE3C6092DA543A17E5FA949','e','fr','n64');
+call insert_new_rom (9,'8E8194BC41583ABFB66DD11A78B93C16','D0A56C8EA8C82CB087F3E56680B7652FB6D21B69','u','en','z64');
+call insert_new_rom (9,'F462C6B1098A890A225106AA5F2A1B20','2A390925B1459365BC00650ED42C98615C5A5736','j','jp','n64');
+call insert_new_rom (9,'5C9DDB3E1BF0688A01DDADACDCD44C2B','72158C0F7F3151709C8170E8066FAEBFC201857D','j','jp','n64');
+call insert_new_rom (9,'EDD6AF6C1FC32B48D581DFB29FE4F7AF','225327A4B1B4B93B573408FA4BBF19B350141194','j','jp','z64');
+call insert_new_rom (9,'82788D13E7C4509B07FF5A2444D9AB67','7A0EFFAACABCCB44CBAC9DD08FB89FF0E6A85A0C','j','jp','z64');
+call insert_new_rom (10,'E6BF5BB787300ED2BF3753977C779146','EF15177485897CC177A81E040B27A2288AFDC214','u','en','n64');
+call insert_new_rom (11,'B55D4F6877D44CC0BFDBC01A8C60A8A3','1B969EDD3F6F37304E1FCA3C1AF3BE37C7527AFC','u','en','pbp');
+call insert_new_rom (11,'4BC878C98ECBEC1B229AF1BA74C1E27D','4F3065634088893FD1E70628D4D486DF967A7B9E','j','jp','pbp');
+call insert_new_rom (12,'D83D467FFF40B9C0F851648B09800939','79CF84AA6CE8E4FEAE002FF524FA11A52A3E34F1','u','en','cue');
+call insert_new_rom (12,'EC5F5F8739983361E5DA09F28C52AAE1','79662C403AD34B03F351C4D0AD54E5D01C8718D7','u','en','cue');
+call insert_new_rom (12,'FB5EC1404F698E6EB7EFC998B15ED13F','554F9360D82A68F582AEAE55020FF52D967AAE22','u','en','pbp');
+call insert_new_rom (12,'89519C4168EE599B9984A13A1E7C0A93','6558E2B18DBA3D4F618D0C020B88E55B96E8BEC1','j','jp','cue');
+call insert_new_rom (12,'6A169AB9D8A79DE4BC22DC10F888C9A3','DB0786B24DB9FAFBC4BEA810B122977FC076622C','j','jp','cue');
+call insert_new_rom (12,'9854493F7007457F849DE05B5764AE0C','AE1A9E8D70671F169947370F70B3FA3BCB5A6A30','j','jp','cue');
+call insert_new_rom (12,'F7BEC6D7D9E020FD225233E618D06AA3','31A57A8CCF2A0E053424DD401D70AD14D5991E70','j','jp','cue');
+call insert_new_rom (13,'DC79E5DB39B05AE6AD4F13295CE02F1A','0013962292A87CBC9295A14412B1A0B77429CA6A','u','en','pbp');
+call insert_new_rom (14,'452067DDBD2425B25512E5179727D3EF','F150527DCF5B8C444B22F01D7C8F4BBE20CD6FCA','u','en','pbp');
+call insert_new_rom (15,'9AD19B68FD2459EA5F814876CB1BDCCD','F25F6768EA164CBFA8052776F6EE298492633D44','u','en','cdi');
+call insert_new_rom (15,'18FB2CF8B58C144CD12BC035755CBC12','782CC370C6C492D7C471704A5B00D5FD2545D1C7','e','en','gdi');
+call insert_new_rom (15,'136F65B6ADDF3CC1AD053C726F7FF29E','EEE02FE993CFE0B127CE6E115422854AB30A1D41','e','de','cdi');
+call insert_new_rom (15,'9564F85D9A2AED14D5C247E5E17E8742','48EE18AE096B4084F57103E6E4FF84828E8D0A1C','e','es','gdi');
+call insert_new_rom (15,'5161FC60D6F883C138568A9624A1017E','46592F3F955CDCEDDE4EAF5D3AE16E5AF9EDE6CC','e','fr','cdi');
+call insert_new_rom (15,'546B038270CB1D6369BB3826D1BF0C0C','FFA81BA5171E43D80CE717BCE7E396665460FD07','s','es','cdi');
+call insert_new_rom (15,'6BF307933FE47027993B8CBB4F008405','3179F5BE5A659EBE8C79B17BAEF36131757A6880','a','en','cdi');
+call insert_new_rom (16,'29178152A259C21AE268B006A1AB2F46','DB806C0CF10DB41F53C0A2870DBC4EC514CA6DEF','u','en','cdi');
+call insert_new_rom (16,'0D4F4DE68E2C9DD76076F12098BC1874','89DA2C20377757177824C77DE33B9EE010E25772','e','en','gdi');
